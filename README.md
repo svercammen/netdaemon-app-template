@@ -12,4 +12,8 @@ Use this repository as template when developing apps for NetDaemon. Please note 
 6. Install the Hass.io add-on by adding the `https://github.com/helto4real/hassio-add-ons` to the add-on store and install NetDaemon
 7. Run the add-on and check the log that your new apps is intitialized
 
+## Read this if you are going to deploy apps through HACKS
+
+Each app should have it´s own subfolder under the `apps` folder. So rename the `HelloWorld` folder and `HelloWorld.cs` and `HelloWorld.yaml` according to your app. The class name should also be renamed to the same unique app name.
+
 For detailed information about netdaemon please see [https://helto4real.github.io/netdaemon/](https://helto4real.github.io/netdaemon/).
