@@ -22,4 +22,4 @@ Each app should have it´s own subfolder under the `apps` folder. So rename the 
 
 ## Attribution
 
-ICON: Attribution: [chris]([chris](https://commons.wikimedia.org/wiki/User:Chrkl)) 論
+ICON: Attribution: [chris](https://commons.wikimedia.org/wiki/User:Chrkl) 論
