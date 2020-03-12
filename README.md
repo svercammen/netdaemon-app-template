@@ -12,7 +12,7 @@ Use this repository as template when developing apps for NetDaemon. Please note 
 6. Install the Hass.io add-on by adding the `https://github.com/helto4real/hassio-add-ons` to the add-on store and install NetDaemon
 7. Run the add-on and check the log that your new apps is intitialized
 
-For detailed information about netdaemon please see [https://helto4real.github.io/netdaemon/](https://helto4real.github.io/netdaemon/).
+For detailed information about netdaemon please see [https://net-daemon.github.io/netdaemon//](https://net-daemon.github.io/netdaemon//).
 
 ## Read this if you are going to deploy apps through HACKS
 
