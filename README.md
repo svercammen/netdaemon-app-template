@@ -20,6 +20,14 @@ Each app should have it´s own subfolder under the `apps` folder. So rename the 
 
 <a href="https://www.buymeacoffee.com/ij1qXRM6E" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
+## Issues
+
+If you have issues or suggestions of improvements, please [add an issue](https://github.com/net-daemon/netdaemon/issues)
+
+## Discuss the NetDaemon
+
+Please [join the Discord server](https://discord.gg/K3xwfcX) to get support or if you want to contribute and help others.
+
 ## Attribution
 
 ICON: Attribution: [chris](https://commons.wikimedia.org/wiki/User:Chrkl) 論
