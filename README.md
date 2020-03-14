@@ -14,7 +14,7 @@ Use this repository as template when developing apps for NetDaemon. Please note 
 
 For detailed information about netdaemon please see [https://net-daemon.github.io/netdaemon/](https://net-daemon.github.io/netdaemon/).
 
-## Read this if you are going to deploy apps through HACKS
+## Read this if you are going to deploy apps through HACS
 
 Each app should have it´s own subfolder under the `apps` folder. So rename the `HelloWorld` folder and `HelloWorld.cs` and `HelloWorld.yaml` according to your app. The class name should also be renamed to the same unique app name. We also recommend using namespaces and fully qualified names like the sample included in the template.
 
