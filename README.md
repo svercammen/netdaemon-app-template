@@ -9,34 +9,15 @@ Use this repository as template when developing apps for NetDaemon. Please note 
 3. Run dotnet restore in the terminal
 4. Add and edit your apps in the apps folder. There are a few code-snippets you can use.
 5. Copy the edited apps to the folder `netdaemon/apps` under your Hass.io config folder. Even more easy is to use HACS to deploy your APP to Home Assistant
-6. Install the Hass.io add-on by adding the `https://github.com/helto4real/hassio-add-ons` to the add-on store and install NetDaemon
-7. Run the add-on and check the log that your new apps is intitialized
+6. Install add-on or run a docker container. Please see [https://netdaemon.xyz/docs/started/installation](https://netdaemon.xyz/docs/started/installation) for details how to run the daemon.
 
-For detailed information about netdaemon please see [https://netdaemon.xyz](https://netdaemon.xyz).
+For detailed information about using netdaemon please see [https://netdaemon.xyz](https://netdaemon.xyz).
 
 ## Read this if you are going to deploy apps through HACS
 
 Each app should have it´s own subfolder under the `apps` folder. So rename the `HelloWorld` folder and `HelloWorld.cs` and `HelloWorld.yaml` according to your app. The class name should also be renamed to the same unique app name. We also recommend using namespaces and fully qualified names like the sample included in the template.
 
 <a href="https://www.buymeacoffee.com/ij1qXRM6E" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
-
-## Building own custom docker container
-
-Sometimes you want to include your own NUGET packages that are not in the core .NET. Then the recommended way is to build your own docker container. In the root folder type this command for multi-platform build that are pushed to docker hub (you have to be logged in before building). The container created is run exactly as the standard one provided by NetDaemon. See [install as docker container](https://netdaemon.xyz/docs/started/installation#install-as-a-docker-container) for details how to run the container.
-
-```bash
-docker buildx build \
-            --platform linux/arm,linux/arm64,linux/amd64 \
-            --output "type=image,push=true" \
-            --no-cache \
-            --file ./Dockerfile . \
-            --compress \
-            --tag [your tag name]
-```
-
->You will enable experiental features of docker to use it. Also create a builder `docker buildx create --use --name mybuild` before running it the first time. **Make sure your tag name is one you have the right to push to dockerhub!!**
-
->You can also do a normal `docker build` command but then you have to make sure you are building on the same platform as where you are running the NetDaemon docker container.
 
 ## Issues
 
