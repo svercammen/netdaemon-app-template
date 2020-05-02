@@ -12,9 +12,12 @@ elif [ "$TARGETPLATFORM" == "linux/amd64" ]; then
     export RID="linux-x64"
 else
     echo 'NOT VALID ARCHITECTURE' && exit 1
-
 fi
 
 cd src
 dotnet publish -c Release -o /netdaemon/bin/publish -r $RID
-rm /netdaemon/bin/publish/daemon_config.json
+
+configfile="/netdaemon/bin/publish/daemon_config.json"
+if [ -f $configfile ]; then
+    rm $configfile
+fi

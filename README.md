@@ -34,6 +34,8 @@ docker buildx build \
             --tag [your tag name]
 ```
 
+>You will enable experiental features of docker to use it. Also create a builder `docker buildx create --use --name mybuild` before running it the first time. **Make sure your tag name is one you have the right to push to dockerhub!!**
+
 >You can also do a normal `docker build` command but then you have to make sure you are building on the same platform as where you are running the NetDaemon docker container.
 
 ## Issues
