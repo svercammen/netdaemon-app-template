@@ -34,6 +34,8 @@ docker buildx build \
             --tag [your tag name]
 ```
 
+>You can also do a normal `docker build` command but then you have to make sure you are building on the same platform as where you are running the NetDaemon docker container.
+
 ## Issues
 
 If you have issues or suggestions of improvements, please [add an issue](https://github.com/net-daemon/netdaemon/issues)
