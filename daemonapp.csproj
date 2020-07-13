@@ -8,14 +8,14 @@
  </PropertyGroup>
 
   <ItemGroup>
-    <None Update="daemon_config.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="JoySoftware.NetDaemon.App" Version="0.10.1-beta" />
-    <PackageReference Include="JoySoftware.NetDaemon.DaemonRunner" Version="0.10.1-beta" />
+    <PackageReference Include="JoySoftware.NetDaemon.App" Version="0.11.0-beta" />
+    <PackageReference Include="JoySoftware.NetDaemon.DaemonRunner" Version="0.11.0-beta" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.5" />
     <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
     <PackageReference Include="System.Reactive" Version="4.4.1" />
