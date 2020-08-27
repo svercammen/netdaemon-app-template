@@ -5,7 +5,7 @@ Use this repository as template when developing apps for NetDaemon. Please note 
 ## Getting started
 
 1. Make new repository with this repo as template
-1. RENAME `_deamon_config.json` to `daemon_config.json`. Edit the daemon_config.json file to provide details about how to connect to Home Assistant. You will need a long lived token, ip, port.
+1. RENAME `_appsettings.json` to `appsettings.json`. Edit the appsettings.json file to provide details about how to connect to Home Assistant. You will need a long lived token, ip, port.
 1. Run dotnet restore in the terminal
 1. Add and edit your apps in the apps folder. There are a few code-snippets you can use.
 1. Copy the edited apps to the folder `netdaemon/apps` under your Hass.io config folder. Even more easy is to use HACS to deploy your APP to Home Assistant
