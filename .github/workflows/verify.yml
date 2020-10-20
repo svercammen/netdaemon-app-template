@@ -36,5 +36,4 @@ jobs:
 
       - name: Build app
         run: |
-          dotnet restore
           dotnet build
