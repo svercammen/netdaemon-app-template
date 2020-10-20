@@ -6,7 +6,7 @@
         "Host": "localhost",
         "Port": 8123,
         "Ssl": false,
-        "Token": ""
+        "Token": "enter_token_here"
     },
     "NetDaemon": {
         "SourceFolder": "./",
