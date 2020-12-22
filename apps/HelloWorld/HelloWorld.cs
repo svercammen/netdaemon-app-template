@@ -1,15 +1,13 @@
 using System;
-using System.Threading.Tasks;
 using System.Reactive.Linq;
 using NetDaemon.Common.Reactive;
 
 // Use unique namespaces for your apps if you going to share with others to avoid
 // conflicting names
-namespace HelloWorld
+namespace Apps
 {
     /// <summary>
-    ///     The NetDaemonApp implements System.Reactive API
-    ///     currently the default one
+    ///     Hello world showcase
     /// </summary>
     public class HelloWorldApp : NetDaemonRxApp
     {
@@ -24,7 +22,7 @@ namespace HelloWorld
                         Entity("light.mylight").TurnOn();
                     }
                 );
-            Log("Hello World!");
+            Log("Hello World");
         }
     }
 }
