@@ -22,7 +22,7 @@ namespace HelloWorld
                         Entity("light.mylight").TurnOn();
                     }
                 );
-            Log("Hello World");
+                Log("Hello World");
         }
     }
 }
