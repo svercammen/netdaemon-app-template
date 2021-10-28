@@ -2,6 +2,8 @@
 
 Use this repository as template when developing apps for NetDaemon. This template is a good starting point for your development environment. It has pre-built structure both for building apps and unit test them. Unit tests fake objects are alpha and the fake API can be changed.
 
+The current model (V2) is currently the official supported one but the future API model is called `HassModel`. We encourage you to use this model for your projects.
+
 ## Getting started
 
 1. Make new repository with this repo as template
