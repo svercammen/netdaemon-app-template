@@ -16,7 +16,7 @@ namespace HassModel
         public LightOnMovement(IHaContext ha)
         {
             ha.Entity("binary_sensor.livingroom_pir")
-                .StateChanges.Where(e => e.New?.State == "on")
+                .StateChanges().Where(e => e.New?.State == "on")
                 .Subscribe(_ => ha.Entity("light.livingroom").CallService("turn_on"));
         }
     }
