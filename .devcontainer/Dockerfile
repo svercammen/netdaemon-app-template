@@ -1,4 +1,4 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0
 
 ENV PATH="/root/.dotnet/tools:${PATH}"
-RUN dotnet tool install -g JoySoftware.NetDaemon.HassModel.CodeGen --version 21.44.0-beta
+RUN dotnet tool install -g JoySoftware.NetDaemon.HassModel.CodeGen --version 21.46.0-beta
