@@ -3,6 +3,9 @@
     "daemonapp": {
       "commandName": "Project",
       "workingDirectory": "$(SolutionDir)"
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
     }
   }
 }
