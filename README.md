@@ -2,16 +2,17 @@
 
 Use this repository as template when developing apps for NetDaemon. This template is a good starting point for your development environment. It has pre-built structure both for building apps and unit test them. Unit tests fake objects are alpha and the fake API can be changed.
 
-The current model (V2) is currently the official supported one but the future API model is called `HassModel`. We encourage you to use this model for your projects.
+We are currently building the future API model called `HassModel`. We encourage you to use this model for your projects. The example app for HassModel is under the `HassModel` folder. The old V2 API will be supported while the new models feature set is improving and give you time to migrate your old apps.
 
 ## Getting started
 
 1. Make new repository with this repo as template
 2. RENAME `src/_appsettings.json` to `src/appsettings.json`. Edit the appsettings.json file to provide details about how to connect to Home Assistant. Token, Host is mandatory. Rest is optional. 
 3. Run dotnet restore in the terminal
-4. Add and edit your apps in the `/src/apps` folder. There are a few code-snippets you can use.
-5. Copy the edited `/src/apps` to the folder `netdaemon/apps` under your Hass.io config folder. See advanced deployment for alternatives.
-6. Install NetDaemon runtime using add-on or run a docker container. Please see [https://netdaemon.xyz/docs/started/installation](https://netdaemon.xyz/docs/started/installation) for details how to run the daemon.
+4. Run code generation tool `nd-codegen` to generate strongly typed classes from your entities and services in Home Assistant and copy the generated file in the apps folder
+6. Add and edit your apps in the `/src/apps` folder. There are a few code-snippets you can use.
+7. Copy the edited `/src/apps` to the folder `netdaemon/apps` under your Hass.io config folder. See advanced deployment for alternatives.
+8. Install NetDaemon runtime using add-on or run a docker container. Please see [https://netdaemon.xyz/docs/started/installation](https://netdaemon.xyz/docs/started/installation) for details how to run the daemon.
 
 For detailed information about using netdaemon please see [https://netdaemon.xyz](https://netdaemon.xyz).
 
@@ -57,7 +58,3 @@ Each app should have it´s own subfolder under the `apps` folder. So rename the 
 ## Discuss the NetDaemon
 
 Please [join the Discord server](https://discord.gg/K3xwfcX) to get support or if you want to contribute and help others.
-
-## Attribution
-
-ICON: Attribution: [chris](https://commons.wikimedia.org/wiki/User:Chrkl) 論
