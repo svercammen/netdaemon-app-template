@@ -1,4 +1,3 @@
-using System;
 using Microsoft.Extensions.Hosting;
 using NetDaemon;
 
@@ -16,5 +15,5 @@ catch (Exception e)
 }
 finally
 {
-    NetDaemonExtensions.CleanupNetDaemon();
+    NetDaemon.NetDaemonExtensions.CleanupNetDaemon();
 }
