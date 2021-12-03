@@ -4,11 +4,11 @@ using NetDaemon.Daemon.Fakes;
 using Xunit;
 
 /// <summary>
-///     Tests the fluent API parts of the daemon
+///     Tests the V2 version of app
 /// </summary>
 /// <remarks>
-///     Mainly the tests checks if correct underlying call to "CallService"
-///     has been made.
+///     This test is for the V2 of the API. We are working on providing a fake library in the future for 
+///     HassModel. 
 /// </remarks>
 public class AppTests : DaemonHostTestBase
 {
@@ -21,7 +21,7 @@ public class AppTests : DaemonHostTestBase
     {
         // Add the instance of app that we run tests on
         // This need always need to be first operation
-        await AddAppInstance(new HelloWorldApp());
+        await AddAppInstance(new HelloWorldV2App());
 
         // Init the fake NetDaemon
         await InitializeFakeDaemon().ConfigureAwait(false);
