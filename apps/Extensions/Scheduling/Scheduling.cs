@@ -11,6 +11,12 @@ public class SchedulingApp
 {
     public SchedulingApp(IHaContext ha, INetDaemonScheduler scheduler)
     {
-        scheduler.RunEvery(TimeSpan.FromSeconds(5), () => ha.CallService("notify", "persistent_notification", data: new { message = "This is a sceduled action!", title = "Schedule!" }));
+        var count = 0;
+        scheduler.RunEvery(TimeSpan.FromSeconds(5), () =>
+        {
+            // Make sure we do not flood the notifications :)
+            if (count++ < 3)
+                ha.CallService("notify", "persistent_notification", data: new { message = "This is a sceduled action!", title = "Schedule!" });
+        });
     }
 }
