@@ -1,12 +1,12 @@
-# This is the dev setup for NetDaemon
+# This is the dev setup for NetDaemon runtime V2
 
-Use this repository as template when developing apps for NetDaemon. This template is a good starting point for your development environment. It has pre-built structure both for building apps and unit test them. Unit tests fake objects are alpha and the fake API can be changed.
+_Notice! This template is getting deprecated when moving to NetDaemon runtime version 3. Fore new users please consider V3 for app development. See [the docs for getting started with NetDaemon V3](https://netdaemon.xyz/docs/v3/started/get_started)_
 
-We are currently building the future API model called `HassModel`. We encourage you to use this model for your projects. The example app for HassModel is under the `HassModel` folder. The old V2 API will be supported while the new models feature set is improving and give you time to migrate your old apps.
+Use this repository as template when developing apps for NetDaemon. This template is the starting point for your development environment. It has pre-built structure both for building apps and unit test them. Unit tests fake objects are alpha and the fake API can be changed.
 
 ## Getting started
 
-1. Make new repository with this repo as template
+1. Make new repository with this repo as template or clone it
 2. RENAME `src/_appsettings.json` to `src/appsettings.json`. Edit the appsettings.json file to provide details about how to connect to Home Assistant. Token, Host is mandatory. Rest is optional. 
 3. Run dotnet restore in the terminal
 4. Run code generation tool `nd-codegen` to generate strongly typed classes from your entities and services in Home Assistant and copy the generated file in the apps folder
